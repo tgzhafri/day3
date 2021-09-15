@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hexagon Poster</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            width: 745px;
+            height: 960px;
+            margin: 0 auto;
+            position: relative;
+            background-image: url(images/bg-1.png);
+            background-size: cover;
+            overflow: hidden;
+        }
+
+        #text-box1 {
+            width: 300px;
+            height: auto;
+            position: relative;
+            top: 50px;
+            left: 50px;
+        }
+
+        #text-box1 h1 {
+            color: white;
+            font-size: 3rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        #text-box1 h2,
+        #text-box2 h2 {
+            color: darkcyan;
+            letter-spacing: 0.8rem;
+        }
+
+        #text-box1 p {
+            color: darkcyan;
+        }
+
+        #text-box2 {
+            width: 300px;
+            height: auto;
+            position: absolute;
+            top: 550px;
+            left: 50px;
+        }
+
+        #text-box2 p {
+            color: darkgray;
+            position: absolute;
+            top: 40px;
+        }
+
+        #text-box2 h3 {
+            color: darkcyan;
+            position: absolute;
+            top: 300px;
+        }
+
+
+        .test {
+            position: absolute;
+            width: 745px;
+            height: 960px;
+        }
+
+        .hexagon {
+            position: relative;
+            width: 300px;
+            height: 173.21px;
+            background-color: #64C7CC;
+            margin: 86.60px 0;
+
+        }
+
+        .hexagon:before,
+        .hexagon:after {
+            content: "";
+            position: absolute;
+            width: 0;
+            border-left: 150px solid transparent;
+            border-right: 150px solid transparent;
+        }
+
+        .hexagon:before {
+            bottom: 100%;
+            border-bottom: 86.60px solid #64C7CC;
+        }
+
+        .hexagon:after {
+            top: 100%;
+            width: 0;
+            border-top: 86.60px solid #64C7CC;
+        }
+
+        .hex1 {
+            position: relative;
+            left: 250px;
+            top: 120px;
+            transform: rotate(-15deg);
+            z-index: 3;
+
+        }
+
+        .hex2 {
+            left: 520px;
+            top: 350px;
+            transform: rotate(-15deg);
+        }
+
+        .big-hexagon {
+            position: relative;
+            width: 400px;
+            height: 230.94px;
+            background-color: #eeff00;
+            margin: 115.47px 0;
+        }
+
+        .big-hexagon:before,
+        .big-hexagon:after {
+            content: "";
+            position: absolute;
+            width: 0;
+            border-left: 200px solid transparent;
+            border-right: 200px solid transparent;
+        }
+
+        .big-hexagon:before {
+            bottom: 100%;
+            border-bottom: 115.47px solid #eeff00;
+        }
+
+        .big-hexagon:after {
+            top: 100%;
+            width: 0;
+            border-top: 115.47px solid #eeff00;
+        }
+
+        .hex3 {
+            left: 450px;
+            top: -150px;
+            transform: rotate(-15deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="text-box1">
+            <div>
+                <h1>HEADLINE</h1>
+                <h2>SPACE HERE</h2>
+                <p>Lorem Ipsum. ashdlahsldashdla</p>
+            </div>
+        </div>
+        <div id="text-box2">
+            <h2>TITLE TEXT</h2>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout.
+                The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+            <h3>www.companyname.com</h3>
+        </div>
+        <div class="test">
+            <div class="hexagon hex1"></div>
+        </div>
+        <div class="test">
+            <div class="hexagon hex2"></div>
+        </div>
+        <div class="test">
+            <div class="big-hexagon hex3"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

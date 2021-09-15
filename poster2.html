@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surrealism</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            width: 1300px;
+            height: 1840px;
+            background-image: url(images/bg-2.png);
+            background-size: cover;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .text {
+            font-size: 13rem;
+            color: white;
+            letter-spacing: 3rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 1000;
+            position: absolute;
+            left: 130px;
+            top: 400px;
+            z-index: 3;
+        }
+
+        #text2 {
+            position: absolute;
+            left: 550px;
+            top: 300px;
+            font-size: 9rem;
+        }
+
+        #text3 {
+            position: absolute;
+            top: 550px;
+        }
+
+        #image1 {
+            width: 600px;
+            height: 400px;
+            background-image: url(images/shoes.png);
+            background-repeat: no-repeat;
+            position: absolute;
+            background-size: cover;
+            left: 550px;
+            top: 350px;
+            z-index: 1;
+            animation: moveShoe 3s;
+        }
+
+        @keyframes moveShoe {
+            0% {
+                left: 1000px;
+            }
+
+            100% {
+                left: 550px;
+            }
+        }
+
+        #image2 {
+            width: 500px;
+            height: 500px;
+            background-image: url(images/moon.png);
+            background-repeat: no-repeat;
+            /* background-size: cover; */
+            position: absolute;
+            left: 300px;
+            top: 630px;
+            z-index: 0;
+            animation: moveMoon 3s;
+        }
+
+        @keyframes moveMoon {
+            0% {
+                left: 0px;
+            }
+
+            50% {
+                top: 300px;
+            }
+
+            100% {
+                left: 300px;
+            }
+        }
+
+        #image3 {
+            width: 800px;
+            height: 1000px;
+            background-image: url(images/pineapple.png);
+            background-repeat: no-repeat;
+            /* background-size: cover; */
+            position: absolute;
+            left: 600px;
+            top: 710px;
+            z-index: 3;
+            animation: movePine 3s;
+        }
+
+        @keyframes movePine {
+            0% {
+                left: 1000px;
+            }
+
+            100% {
+                left: 600px;
+            }
+        }
+
+        #horizontal1 {
+            width: 750px;
+            height: 10px;
+            background-color: white;
+            position: absolute;
+            left: 450px;
+            top: 360px;
+            z-index: 0;
+        }
+
+        #horizontal2 {
+            width: 850px;
+            height: 10px;
+            background-color: white;
+            position: absolute;
+            left: 150px;
+            top: 1200px;
+        }
+
+        #horizontal3 {
+            width: 100px;
+            height: 10px;
+            background-color: white;
+            position: absolute;
+            left: 800px;
+            top: 1330px;
+        }
+
+        #vertical1 {
+            width: 10px;
+            height: 400px;
+            background-color: white;
+            position: absolute;
+            left: 760px;
+            top: 1470px;
+        }
+
+        #exhibition {
+            width: auto;
+            height: auto;
+            color: white;
+            position: absolute;
+            left: 800px;
+            top: 1360px;
+            font-size: 1.5rem;
+            font-family: sans-serif;
+            letter-spacing: 0.4rem;
+        }
+
+        #artists {
+            width: auto;
+            height: auto;
+            color: white;
+            position: absolute;
+            left: 800px;
+            top: 1460px;
+            font-size: 1.25rem;
+            font-family: sans-serif;
+            letter-spacing: 0.4rem;
+            line-height: 2.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+
+
+        <div class="text">
+            <div id="text1">SUR</div>
+            <div id="text2">REAL</div>
+            <div id="text3">ISM</div>
+        </div>
+
+        <div class="image">
+            <div id="image1"></div>
+            <div id="image2"></div>
+            <div id="image3"></div>
+        </div>
+
+        <div id="horizontal1"></div>
+        <div id="horizontal2"></div>
+        <div id="horizontal3"></div>
+        <div id="vertical1"></div>
+
+        <div id="exhibition">
+            <h2>EXHIBITION</h2>
+            <h4>CONTEMPORARY ARTISTS</h4>
+        </div>
+
+        <div id="artists">
+            <h3>MICHAEL MIND</h3>
+            <h5>ARTIST, SURREAL COMMUNITY</h5>
+            <H3>KELLY F DIOR</H3>
+            <H5>EXHIBITIONIST</H5>
+            <h3>SOIL H LUNA</h3>
+            <h5>DESIGNE, CONTEMPORARY ARTIST</h5>
+        </div>
+    </div>
+</body>
+
+</html>
